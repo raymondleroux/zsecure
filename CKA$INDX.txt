@@ -1,0 +1,883 @@
+CKA$*   ;zSecure      ;      ;SCKRCARL overview
+CKA$INDX;zSecure      ;      ;This list of brief SCKRCARL member explanations
+CKAD*   ;zSecure Audit;      ;zSecure Audit (RACF or common) displays (CARLa)
+CKAD‡CO ;zSecure Audit;RACF  ;Audit concerns AU.S OVERVIEW - RACF control
+CKAD‡MO ;zSecure Audit;      ;Audit concerns AU.S OVERVIEW - MVS tables
+CKAD‡RO ;zSecure Audit;RACF  ;Audit concerns AU.S OVERVIEW - RACF resource
+CKAD‡XO ;zSecure Audit;RACF  ;Audit concerns AU.S OVERVIEW - MVS extended
+CKADASDD;zSecure Audit;      ;Display Subsystem allocations
+CKADFCSF;zSecure Audit;      ;SMF display - ICSF audit record (SMF type 82)
+CKADFDAR;zSecure Audit;      ;SMF display - RACINIT from SMF type 30
+CKADFDDA;zSecure Audit;      ;SMF display - Data set activity
+CKADFDFS;zSecure Audit;      ;SMF display - z/OS UNIX file activity
+CKADFDIC;zSecure Audit;      ;SMF display - ICF catalog activity
+CKADFDJA;zSecure Audit;      ;SMF display - Job activity
+CKADFDOT;zSecure Audit;      ;SMF display - Miscellaneous 'other' records
+CKADFDRA;zSecure Audit;RACF  ;SMF display - RACF processing (layouts per event)
+CKADFDRS;zSecure Audit;RACF  ;SMF display - RACF processing (generic layout)
+CKADFDVS;zSecure Audit;      ;SMF display - VSAM catalog activity
+CKADFDZZ;zSecure Audit;      ;SMF display - Common SMF record header info
+CKADFD02;zSecure Audit;      ;SMF display - DB2 audit record (SMF type 102)
+CKADFD81;zSecure Audit;RACF  ;SMF display - RACF status record (cf. CKRDSY80)
+CKADFD90;zSecure Audit;      ;SMF display - System status information (type 90)
+CKADFJOB;zSecure Audit;      ;SMF display - Activity summary (by user and job)
+CKADFJVI;zSecure Audit;      ;SMF display - Jobs with failures
+CKADFJ33;zSecure Audit;      ;SMF display - APPC transaction summaries
+CKADFOME;zSecure Audit;      ;SMF display - Omegamon records
+CKADFRST;zSecure Audit;RACF  ;SMF display - RACF daily statistics
+CKADFRVR;zSecure Audit;RACF  ;SMF display - RACF revoke/resume summaries
+CKADFR80;zSecure Audit;RACF  ;SMF display - RACF daily exceptions (type 80)
+CKADFR99;zSecure Audit;RACF  ;SMF display - RACF daily exceptions £2 (type 80)
+CKADFSUM;zSecure Audit;      ;SMF display - Record summary table
+CKADFTCP;zSecure Audit;      ;SMF display - IP connection activity
+CKADF042;zSecure Audit;      ;SMF display - NFS activity and events
+CKADF109;zSecure Audit;      ;SMF display - Firewall activity (type 109)
+CKADF110;zSecure Audit;      ;SMF display - CICS records
+CKADPGM ;zSecure Audit;      ;RE.P.P Report Program Display
+CKADQES ;zSecure Audit;      ;RE.O.A TYPE=AS_DD - Show allocated DD-names
+CKADQJN ;zSecure Audit;      ;RE.J.N TYPE=NJE_NODE - Display NJE nodes
+CKADQMV ;zSecure Audit;      ;RE.O.V - Show z/OS system variables
+CKADQUP ;zSecure Audit;      ;RE.U.P TYPE=UNIX_PS - Show UNIX processes
+CKADRFIL;zSecure Audit;RACF  ;AU.S RACF resource - Sensitive UNIX files
+CKADRFW ;zSecure Audit;RACF  ;AU.S RACF resource - World-writable UNIX files
+CKADRKDS;zSecure Audit;      ;RE.K.D Show data sets with key label or policy
+CKADRPAU;zSecure Audit;RACF  ;AU.S RACF resource - RACF profile audit concerns
+CKADRSEN;zSecure Audit;RACF  ;AU.S MVS extended - Sensitive data set protection
+CKADRTRU;zSecure Audit;RACF  ;AU.S RACF resource - Sensitive objects
+CKADRUGD;zSecure Audit;RACF  ;AU.S RACF resource - Uid/gid w/o RACF definition
+CKADSCON;zSecure Audit;      ;AU.S MVS tables/RE.O.O - Console display
+CKADSCPU;zSecure Audit;      ;RE.H.C Display systems summarized by CEC serial
+CKADSCSM;zSecure Audit;      ;AU.S MVS tables/RE.O.C - Writable common storage
+CKADSDMS;zSecure Audit;RACF  ;AU.S MVS ext/RE.O.D  CA-disk system opts all ESMs
+CKADSDYN;zSecure Audit;      ;AU.S MVS extended - Exits and tables
+CKADSD80;zSecure Audit;      ;AU.S MVS tables - VM System settings audit conc.
+CKADSENS;zSecure Audit;      ;AU.S MVS tables - Sensitive data sets (detailed)
+CKADSEN0;zSecure Audit;      ;AU.S MVS tables - Sensitive data sets (concise)
+CKADSIOA;zSecure Audit;      ;AU.S MVS tables - Authorized I/O appendages
+CKADSIP ;zSecure Audit;      ;AU.S MVS tables - TCP/IP stack reports
+CKADSIPL;zSecure Audit;      ;AU.S MVS tables/RE.O.I - IPL parameters
+CKADSJCL;zSecure Audit;      ;AU.S MVS tables/RE.J.J - JES2 jobclasses (detail)
+CKADSJC0;zSecure Audit;      ;AU.S MVS tables - JES2 jobclass params (concise)
+CKADSMFS;zSecure Audit;      ;AU.S MVS tables/RE.O.L - SMF subsystem settings
+CKADSMNT;zSecure Audit;      ;AU.S MVS ext/RE.U.M - z/OS UNIX mount points
+CKADSMSG;zSecure Audit;      ;AU.S MVS tab/RE.O.M Message Processing Facility
+CKADSPC ;zSecure Audit;      ;AU.S MVS tables/RE.P.C - Program calls (detailed)
+CKADSPC0;zSecure Audit;      ;AU.S MVS tables - Program calls (concise)
+CKADSPPT;zSecure Audit;      ;AU.S MVS tables/RE.P.T - Program Property Table
+CKADSR80;zSecure Audit;RACF  ;AU.S RACF control - SETROPTS audit concerns
+CKADSSCT;zSecure Audit;      ;AU.S MVS tables/RE.P.S - Subsys (detailed)
+CKADSSC0;zSecure Audit;      ;AU.S MVS tables - Subsys communication (concise)
+CKADSTAP;zSecure Audit;      ;AU.S MVS tables/RE.O.T - Tape protection
+CKADSTD ;zSecure Audit;      ;AU.R Standard Compliance Test Report
+CKADSVC ;zSecure Audit;      ;AU.S MVS tab/RE.P.V - Supervisor calls (detail)
+CKADSVC0;zSecure Audit;      ;AU.S MVS tables - Supervisor calls (concise)
+CKADSVSM;zSecure Audit;      ;AU.S MVS tables/RE.O.R - Virtual storage map
+CKADSXIT;zSecure Audit;      ;AU.S MVS ext/RE.P.X - Exits and tables
+CKADSY80;zSecure Audit;      ;AU.S MVS tab/RE.O.S - System settings & concerns
+CKADUTRU;zSecure Audit;RACF  ;AU.S RACF user/RE.T - Trusted users
+CKADVOLD;zSecure Audit;      ;AU.S MVS ext/RE.H.D - DASD volume protection
+CKAG*   ;zSecure Audit;RACF  ;zSecure Audit RACF STIG Compliance
+CKAG‡   ;zSecure Audit;RACF  ;STIG Compliance members and licenses
+CKAG‡DEF;zSecure Audit;RACF  ;Deftypes STIG Compliance Audit RACF
+CKAG‡PLS;zSecure Audit;      ;STIGplus Compliance members
+CKAG‡TMP;zSecure Audit;RACF  ;AU.R STIG Temporary Implementations
+CKAG‡6  ;zSecure Audit;RACF  ;STANDARD and IMBEDs RACF STIG 6.31
+CKAG‡6PL;zSecure Audit;RACF  ;STANDARD and IMBEDs RACF STIG PLUS 6.x
+CKAGCI10;zSecure Audit;RACF  ;AU.R STIG ZCIC0010 CICS data set protection
+CKAGCI20;zSecure Audit;RACF  ;AU.R STIG ZCIC0020 CICS transaction security
+CKAGCI30;zSecure Audit;      ;AU.R STIG ZCIC0030 CICS SIT parameters
+CKAGCI40;zSecure Audit;RACF  ;AU.R STIG ZCIC0040 CICS region userid(s)
+CKAGCI41;zSecure Audit;RACF  ;AU.R STIG ZCIC0041 CICS default logonids
+CKAGCI42;zSecure Audit;RACF  ;AU.R STIG ZCIC0042 CICS logonid time-out limits
+CKAGCR21;zSecure Audit;RACF  ;AU.R STIG ZCICR021 FTP daemon rules
+CKAGCR41;zSecure Audit;RACF  ;AU.R STIG ZCICR041 CICS_REGION(PROPCNTL)
+CKAGC010;zSecure Audit;RACF  ;AU.R STIG ACP00010 SYS1.PARMLIB rules
+CKAGC020;zSecure Audit;RACF  ;AU.R STIG ACP00020 SYS1.LINKLIB rules
+CKAGC030;zSecure Audit;RACF  ;AU.R STIG ACP00030 SYS1.SVCLIB rules
+CKAGC040;zSecure Audit;RACF  ;AU.R STIG ACP00040 SYS1.IMAGELIB rules
+CKAGC050;zSecure Audit;RACF  ;AU.R STIG ACP00050 SYS1.LPALIB rules
+CKAGC060;zSecure Audit;RACF  ;AU.R STIG ACP00060 TSO APF dataset rules
+CKAGC070;zSecure Audit;RACF  ;AU.R STIG ACP00070 TSO LPA LIST rules
+CKAGC080;zSecure Audit;RACF  ;AU.R STIG ACP00080 TSO NUCLEUS rules
+CKAGC110;zSecure Audit;RACF  ;AU.R STIG ACP00110 TSO LINKLIST rules
+CKAGC120;zSecure Audit;RACF  ;AU.R STIG ACP00120 RACF database rules
+CKAGC130;zSecure Audit;RACF  ;AU.R STIG ACP00130 Master Catalog rules
+CKAGC135;zSecure Audit;RACF  ;AU.R STIG ACP00135 User Catalog rules
+CKAGC150;zSecure Audit;RACF  ;AU.R STIG ACP00150 JES SYSTEM rules
+CKAGC170;zSecure Audit;RACF  ;AU.R STIG ACP00170 SYS1.UADS access rules
+CKAGC180;zSecure Audit;RACF  ;AU.R STIG ACP00180 SMF access rules
+CKAGC220;zSecure Audit;RACF  ;AU.R STIG ACP00220 SYSx.TRACE access rules
+CKAGC230;zSecure Audit;RACF  ;AU.R STIG ACP00230 PAGE DATASET rules
+CKAGC250;zSecure Audit;RACF  ;AU.R STIG ACP00250 STC and TSU proc rules
+CKAGC260;zSecure Audit;RACF  ;AU.R STIG ACP00260 IEAABD resource rules
+CKAGC270;zSecure Audit;RACF  ;AU.R STIG ACP00270 Dynamic list protection
+CKAGC282;zSecure Audit;RACF  ;AU.R STIG ACP00282 z/OS system command rules
+CKAGC293;zSecure Audit;RACF  ;AU.R STIG ACP00293 CONSOLE resource rules
+CKAGC340;zSecure Audit;      ;AU.R STIG ACP00340 z/OS baseline report rules
+CKAGC350;zSecure Audit;RACF  ;AU.R STIG ACP00350 IEASYMUP resource rule
+CKAGFE11;zSecure Audit;      ;AU.R STIG ZFEP0011 FEP hardware protection
+CKAGFE12;zSecure Audit;      ;AU.R STIG ZFEP0012 FEP access rules
+CKAGFE13;zSecure Audit;      ;AU.R STIG ZFEP0013 FEP NCP load and dump rules
+CKAGF010;zSecure Audit;RACF  ;AU.R STIG IFTP0010 FTP server daemon
+CKAGF020;zSecure Audit;      ;AU.R STIG IFTP0020 FTP parameter rules
+CKAGF030;zSecure Audit;      ;AU.R STIG IFTP0030 FTP.DATA config rules
+CKAGF040;zSecure Audit;      ;AU.R STIG IFTP0040 FTP user exit rules
+CKAGF050;zSecure Audit;      ;AU.R STIG IFTP0050 FTP warning banner rules
+CKAGF060;zSecure Audit;      ;AU.R STIG IFTP0060 FTP SMF record rules
+CKAGF070;zSecure Audit;      ;AU.R STIG IFTP0070 FTP Unix directory protection
+CKAGF080;zSecure Audit;RACF  ;AU.R STIG IFTP0080 FTP data set protection
+CKAGF090;zSecure Audit;RACF  ;AU.R STIG IFTP0090 TFTP Server protection
+CKAGF100;zSecure Audit;      ;AU.R STIG IFTP0100 FTP transmission rules
+CKAGF110;zSecure Audit;      ;AU.R STIG IFTP0110 FTP control card protection
+CKAGHC01;zSecure Audit;RACF  ;AU.R STIG ZHCKR001 HZS STC data set protection
+CKAGHC32;zSecure Audit;RACF  ;AU.R STIG ZHCKR032 HZS STARTED class or ICHRIN03
+CKAGIC01;zSecure Audit;RACF  ;AU.R STIG ZICSR001 ICSF STC data set protection
+CKAGIC32;zSecure Audit;RACF  ;AU.R STIG ZICSR032 ICSF STARTED class or ICHRIN03
+CKAGIU20;zSecure Audit;RACF  ;AU.R STIG IUTN0020 startup parms Telnet Server
+CKAGJE41;zSecure Audit;RACF  ;AU.R STIG ZJES0041 JESPOOL class rules
+CKAGJE60;zSecure Audit;RACF  ;AU.R STIG ZJES0060 JES SURROGAT profiles
+CKAGMT32;zSecure Audit;RACF  ;AU.R STIG ZSMTR032 IBM CSSMTP started task
+CKAGM010;zSecure Audit;      ;AU.R STIG AAMV0010 CMP utilization check
+CKAGM014;zSecure Audit;      ;AU.R STIG AAMV0014 Software upgrade/removal rules
+CKAGM018;zSecure Audit;      ;AU.R STIG AAMV0018 Software patching rules
+CKAGM030;zSecure Audit;      ;AU.R STIG AAMV0030 LNKAUTH=APFTAB active
+CKAGM040;zSecure Audit;      ;AU.R STIG AAMV0040 APFLIST library check
+CKAGM050;zSecure Audit;      ;AU.R STIG AAMV0050 Sensitive Utilities
+CKAGM160;zSecure Audit;      ;AU.R STIG AAMV0160 PPT entry validation
+CKAGM380;zSecure Audit;      ;AU.R STIG AAMV0380 Required SMF records
+CKAGM400;zSecure Audit;      ;AU.R STIG AAMV0400 SMF collection procedures
+CKAGM420;zSecure Audit;      ;AU.R STIG AAMV0420 ACP database backups
+CKAGM430;zSecure Audit;      ;AU.R STIG AAMV0430 System DASD backups
+CKAGM440;zSecure Audit;      ;AU.R STIG AAMV0440 PASSWORD data set disallowed
+CKAGM450;zSecure Audit;      ;AU.R STIG AAMV0450 System programs authority
+CKAGPL01;zSecure Audit;RACF  ;AU.R STIG ZCA1R003 RMM data set security
+CKAGR244;zSecure Audit;RACF  ;AU.R STIG RACF0244 FACILITY class rules
+CKAGR246;zSecure Audit;RACF  ;AU.R STIG RACF0246 OPERCMDS class rules
+CKAGR248;zSecure Audit;RACF  ;AU.R STIG RACF0248 CONSOLE class rules
+CKAGR250;zSecure Audit;RACF  ;AU.R STIG RACF0250 SETROPTS ADSP OFF
+CKAGR260;zSecure Audit;RACF  ;AU.R STIG RACF0260 DOMAIN CLASS audit=yes
+CKAGR270;zSecure Audit;RACF  ;AU.R STIG RACF0270 SETROPTS CLASSACT(TEMPDSN)
+CKAGR280;zSecure Audit;RACF  ;AU.R STIG RACF0280 SETROPTS CMDVIOL active
+CKAGR290;zSecure Audit;RACF  ;AU.R STIG RACF0290 SETROPTS EGN active
+CKAGR300;zSecure Audit;RACF  ;AU.R STIG RACF0300 SETROPTS ERASE(ALL) active
+CKAGR310;zSecure Audit;RACF  ;AU.R STIG RACF0310 SETROPTS GENCMD rules
+CKAGR320;zSecure Audit;RACF  ;AU.R STIG RACF0320 SETROPTS GENERIC rules
+CKAGR330;zSecure Audit;RACF  ;AU.R STIG RACF0330 SETROPTS TERMINAL(READ)
+CKAGR350;zSecure Audit;RACF  ;AU.R STIG RACF0350 SETROPTS GRPLIST active
+CKAGR360;zSecure Audit;RACF  ;AU.R STIG RACF0360 SETROPTS INACTIVE <= 35 days
+CKAGR370;zSecure Audit;RACF  ;AU.R STIG RACF0370 SETROPTS INITSTATS active
+CKAGR380;zSecure Audit;RACF  ;AU.R STIG RACF0380 SETROPTS BATCHALLRACF active
+CKAGR400;zSecure Audit;RACF  ;AU.R STIG RACF0400 SETROPTS JES(XBMALLRACF) on
+CKAGR420;zSecure Audit;RACF  ;AU.R STIG RACF0420 SETROPTS OPERAUDIT active
+CKAGR430;zSecure Audit;RACF  ;AU.R STIG RACF0430 SETROPTS PWD HISTORY >= 10
+CKAGR440;zSecure Audit;RACF  ;AU.R STIG RACF0440 SETROPTS PWD INTERVAL <= 60
+CKAGR445;zSecure Audit;RACF  ;AU.R STIG RACF0445 SETROPTS PWD MINCHANGE <= 59
+CKAGR450;zSecure Audit;RACF  ;AU.R STIG RACF0450 SETROPTS PWD REVOKE <= 2
+CKAGR460;zSecure Audit;RACF  ;AU.R STIG RACF0460 RACF PWDRULEs
+CKAGR467;zSecure Audit;RACF  ;AU.R STIG RACF0467 Password protection algorithm
+CKAGR470;zSecure Audit;RACF  ;AU.R STIG RACF0470 SETROPTS PWD WARNING >= 10
+CKAGR480;zSecure Audit;RACF  ;AU.R STIG RACF0480 SETROPTS PROTECTALL active
+CKAGR490;zSecure Audit;RACF  ;AU.R STIG RACF0490 SETROPTS REALDSN active
+CKAGR500;zSecure Audit;RACF  ;AU.R STIG RACF0500 SETROPTS RETPD never expires
+CKAGR520;zSecure Audit;RACF  ;AU.R STIG RACF0520 SETROPTS SAUDIT active
+CKAGR530;zSecure Audit;RACF  ;AU.R former STIG RACF0530 SECLEVELAUDIT inactive
+CKAGR540;zSecure Audit;RACF  ;AU.R STIG RACF0540 SETROPTS LOGOPTIONS active
+CKAGR560;zSecure Audit;RACF  ;AU.R STIG RACF0560 SETROPTS WHENPROGRAM active
+CKAGR570;zSecure Audit;RACF  ;AU.R STIG RACF0570 RACF user config rules
+CKAGR590;zSecure Audit;RACF  ;AU.R STIG RACF0590 Batch SURROGAT profiles
+CKAGR595;zSecure Audit;RACF  ;AU.R STIG RACF0595 Batch job userid settings
+CKAGR620;zSecure Audit;RACF  ;AU.R STIG RACF0620 STARTED TASK USERID
+CKAGR660;zSecure Audit;RACF  ;AU.R STIG RACF0660 STC RACF trusted attr.
+CKAGR680;zSecure Audit;RACF  ;AU.R STIG RACF0680 Storage maintenance userids
+CKAGR690;zSecure Audit;RACF  ;AU.R STIG RACF0690 Emergency userid settings
+CKAGR710;zSecure Audit;RACF  ;AU.R STIG RACF0710 System/Group SPECIAL userids
+CKAGR720;zSecure Audit;RACF  ;AU.R STIG RACF0720 System/Group OPERATION userids
+CKAGR730;zSecure Audit;RACF  ;AU.R STIG RACF0730 System/Group AUDITOR userids
+CKAGR760;zSecure Audit;RACF  ;AU.R STIG RACF0760 DASDVOL/GDASDVOL profiles
+CKAGSD10;zSecure Audit;      ;AU.R STIG ISLG0010 SYSLOG daemon init
+CKAGSD20;zSecure Audit;RACF  ;AU.R STIG ISLG0020 SYSLOGD configuration
+CKAGSF38;zSecure Audit;RACF  ;AU.R STIG ZISFR038 SDSF class status
+CKAGSM08;zSecure Audit;RACF  ;AU.R STIG ZSMSR008 DFSMS RACF classes
+CKAGSM22;zSecure Audit;      ;AU.R STIG ZSMS0022 DFSMS data set volumes
+CKAGSM32;zSecure Audit;      ;AU.R STIG ZSMSR032 SMS Parameter settings
+CKAGTC20;zSecure Audit;      ;AU.R STIG ITCP0020 TCPIP.DATA settings
+CKAGTC30;zSecure Audit;      ;AU.R STIG ITCP0030 TCPIP CONFIG statements
+CKAGTC60;zSecure Audit;RACF  ;AU.R STIG ITCP0060 TCPIP started task
+CKAGTC70;zSecure Audit;      ;AU.R STIG ITCP0070 TCPIP data set settings
+CKAGTN10;zSecure Audit;      ;AU.R STIG ITNT0010 TN3270 IP Telnet Port
+CKAGTN50;zSecure Audit;      ;AU.R STIG ITNT0050 TN3270 Telnet Server
+CKAGTN60;zSecure Audit;      ;AU.R STIG ITNT0060 SMF TN3270 recording
+CKAGTS20;zSecure Audit;      ;AU.R STIG ZTSO0020 SYS1.UADS logonid restrictions
+CKAGVT18;zSecure Audit;      ;AU.R STIG ZVTM0018 VTAM data set settings
+CKAGWM20;zSecure Audit;      ;AU.R STIG ZWMQ0020 MQ TIMEOUT(15), INTERVAL(5)
+CKAGWM30;zSecure Audit;RACF  ;AU.R STIG ZWMQ0030 MQ started tasks
+CKAGWM40;zSecure Audit;RACF  ;AU.R STIG ZWMQ0040 MQ data sets protection
+CKAGWM49;zSecure Audit;RACF  ;AU.R STIG ZWMQ0049 MQ resource classes actived
+CKAGWM51;zSecure Audit;      ;AU.R STIG ZWMQ0051 MQ SUBSYSTEM definitions
+CKAGWM52;zSecure Audit;RACF  ;AU.R STIG ZWMQ0052 MQCONN security
+CKAGWM53;zSecure Audit;RACF  ;AU.R STIG ZWMQ0053 MQ dead letter protection
+CKAGWM54;zSecure Audit;RACF  ;AU.R STIG ZWMQ0054 MQ Queue definitions
+CKAGWM55;zSecure Audit;RACF  ;AU.R STIG ZWMQ0055 MQ Process definitions
+CKAGWM56;zSecure Audit;RACF  ;AU.R STIG ZWMQ0056 MQ Namelist definitions
+CKAGWM58;zSecure Audit;RACF  ;AU.R STIG ZWMQ0058 MQ context protection
+CKAGWM59;zSecure Audit;RACF  ;AU.R STIG ZWMQ0059 MQCMDS security
+CKAGWM60;zSecure Audit;RACF  ;AU.R STIG ZWMQ0060 MQ reslevel protection
+CKAGZU11;zSecure Audit;      ;AU.R STIG ZUSS0011 UNIX IPLPARM OMVS specified
+CKAGZU13;zSecure Audit;      ;AU.R STIG ZUSS0013 UNIX Filesystem mount
+CKAGZU22;zSecure Audit;RACF  ;AU.R STIG ZUSS0022 UNIX BPX.SERV.** protected
+CKAGZU32;zSecure Audit;RACF  ;AU.R STIG ZUSS0032 UNIX components dsn
+CKAGZU41;zSecure Audit;RACF  ;AU.R STIG ZUSS0041 UNIX OMVSGRP STCOMVS GID
+CKAGZU42;zSecure Audit;RACF  ;AU.R STIG ZUSS0042 UNIX Group RACF GID
+CKAGZU43;zSecure Audit;RACF  ;AU.R STIG ZUSS0043 UNIX kernel user RACF
+CKAGZU44;zSecure Audit;RACF  ;AU.R STIG ZUSS0044 UNIX BPXROOT account settings
+CKAGZU45;zSecure Audit;RACF  ;AU.R STIG ZUSS0045 UNIX RMFGAT user RACF
+CKAGZU46;zSecure Audit;RACF  ;AU.R STIG ZUSS0046 UNIX UID(0) assignment
+CKAGZU47;zSecure Audit;RACF  ;AU.R STIG ZUSS0047 UNIX all users RACF
+CKAGZU48;zSecure Audit;RACF  ;AU.R STIG ZUSS0048 UNIX default user account
+CKAGZU60;zSecure Audit;RACF  ;AU.R STIG ZUSSR060 UNIX active class RACF
+CKAGZU70;zSecure Audit;RACF  ;AU.R STIG ZUSSR070 UNIX class RACLIST
+CKAL$ALL;zSecure Audit;RACF  ;Concatenation of all AU.S MVS and RACF categories
+CKAL$CD ;zSecure Audit;RACF  ;AU.S RACF control category
+CKAL$MD ;zSecure Audit;      ;AU.S MVS tables category
+CKAL$RD ;zSecure Audit;RACF  ;AU.S RACF resource category
+CKAL$UD ;zSecure Audit;RACF  ;AU.S RACF user category
+CKAL$XD ;zSecure Audit;RACF  ;AU.S MVS extended category (cf. C2AL$XD)
+CKAL*   ;zSecure Audit;      ;zSecure Audit (RACF or common) batch reports
+CKAL‡ALL;zSecure Audit;RACF  ;Audit concerns for all AU.S MVS & RACF categories
+CKAL‡CO ;zSecure Audit;RACF  ;Audit concerns for AU.S RACF control
+CKAL‡MO ;zSecure Audit;      ;Audit concerns for AU.S MVS tables
+CKAL‡RO ;zSecure Audit;RACF  ;Audit concerns for AU.S RACF resource
+CKAL‡XO ;zSecure Audit;RACF  ;Audit concerns for AU.S MVS extended
+CKALFDES;zSecure Audit;      ;SMF report - Overview of record descriptions
+CKALFDEV;zSecure Audit;      ;SMF report - Find use of a specific device type
+CKALFJES;zSecure Audit;      ;SMF report - JES2 related logging
+CKALFJOB;zSecure Audit;      ;SMF report - Activity summary (by user and job)
+CKALFJVI;zSecure Audit;      ;SMF report - Jobs with failures
+CKALFJ33;zSecure Audit;      ;SMF report - APPC transaction summaries
+CKALFNPR;zSecure Audit;RACF  ;SMF report - Access to data sets w/o RACF profile
+CKALFREV;zSecure Audit;RACF  ;SMF report - Generate REVOKE for many pw changes
+CKALFRST;zSecure Audit;RACF  ;SMF report - RACF daily statistics
+CKALFRVR;zSecure Audit;RACF  ;SMF report - RACF revoke/resume summaries
+CKALFR80;zSecure Audit;RACF  ;SMF report - RACF daily exceptions (type 80)
+CKALFR81;zSecure Audit;RACF  ;SMF report - RACF status record (cf. CKRLSR13)
+CKALFSEL;zSecure Audit;      ;SMF report - (Dummy) selection newlist SMFSEL
+CKALFSTA;zSecure Audit;RACF  ;SMF report - RACF event counts by hour
+CKALFSTB;zSecure Audit;RACF  ;SMF report - RACF event counts by time of day
+CKALFSTC;zSecure Audit;RACF  ;SMF report - RACF event counts by weekday
+CKALFSUM;zSecure Audit;      ;SMF report - SMF record summary table
+CKALFTAP;zSecure Audit;      ;SMF report - Find users of round tapes
+CKALFUSR;zSecure Audit;RACF  ;SMF report - (Partial) user audit trail
+CKALFVW ;zSecure Audit;RACF  ;SMF report - RACF violations and warnings
+CKALMAPP;zSecure Audit;      ;Library audit - Applications (based on prefix)
+CKALMCHG;zSecure Audit;      ;Library audit - Library changes (details)
+CKALMDET;zSecure Audit;      ;Library audit - Library status (details)
+CKALMDUP;zSecure Audit;      ;Library audit - Duplicate members
+CKALMID ;zSecure Audit;      ;Library audit - Identify ZAPs and Identify Data
+CKALMOV ;zSecure Audit;      ;Library audit - Library status (overview)
+CKALMOVC;zSecure Audit;      ;Library audit - Library changes (overview)
+CKALMPRF;zSecure Audit;      ;Library audit - Applications (by component code)
+CKALPGM ;zSecure Audit;RACF  ;Program Protection Overview list
+CKALQJN ;zSecure Audit;      ;TYPE=NJE_NODE - List NJE nodes
+CKALQMV ;zSecure Audit;      ;TYPE=SYSTEM_VARIABLE - List z/OS system variables
+CKALRFIL;zSecure Audit;RACF  ;AU.S RACF resource - Sensitive HFS files
+CKALRFW ;zSecure Audit;RACF  ;AU.S RACF resource - World-writable UNIX files
+CKALRPAU;zSecure Audit;RACF  ;AU.S RACF resource - RACF profile audit concerns
+CKALRTRU;zSecure Audit;RACF  ;AU.S RACF resource - Sensitive objects (detailed)
+CKALRTR0;zSecure Audit;RACF  ;AU.S RACF resource - Sensitive objects (concise)
+CKALRUGD;zSecure Audit;RACF  ;AU.S RACF resource - Uid/gid w/o RACF definition
+CKALSCON;zSecure Audit;      ;AU.S MVS tables - Console definitions report
+CKALSCSM;zSecure Audit;      ;AU.S MVS tables - Globally Writable common storag
+CKALSDMS;zSecure Audit;RACF  ;AU.S MVS extended - SAMS:Disk(DMS) system options
+CKALSDYN;zSecure Audit;      ;AU.S MVS extended - Exits and tables
+CKALSD13;zSecure Audit;      ;AU.S MVS tables - VM System concerns (132 wide)
+CKALSD80;zSecure Audit;      ;AU.S MVS tables - VM System concerns ( 80 wide)
+CKALSENS;zSecure Audit;      ;AU.S MVS tables - Sensitive data sets
+CKALSIOA;zSecure Audit;      ;AU.S MVS tables - Authorized I/O appendages
+CKALSIP ;zSecure Audit;      ;AU.S MVS tables - TCP/IP stack reports
+CKALSIPL;zSecure Audit;      ;AU.S MVS tables - IPL parameters
+CKALSJCL;zSecure Audit;      ;AU.S MVS tables - JES2 jobclass params
+CKALSMFS;zSecure Audit;      ;AU.S MVS tables - SMF subsystem settings
+CKALSMNT;zSecure Audit;      ;AU.S MVS extended - z/OS UNIX mount points
+CKALSMSG;zSecure Audit;      ;AU.S MVS tables - Message Processing Facility
+CKALSPC ;zSecure Audit;      ;AU.S MVS tables - Program calls
+CKALSPPT;zSecure Audit;      ;AU.S MVS tables - Program Property Table
+CKALSR13;zSecure Audit;RACF  ;AU.S RACF control - SETROPTS concerns (132 wide)
+CKALSR80;zSecure Audit;RACF  ;AU.S RACF control - SETROPTS concerns ( 80 wide)
+CKALSSCT;zSecure Audit;      ;AU.S MVS tables - Subsystem communication
+CKALSTAP;zSecure Audit;RACF  ;AU.S MVS tables - Tape protection settings (RACF)
+CKALSTD ;zSecure Audit;      ;Sample compliance report
+CKALSTDS;zSecure Audit;      ;AU.R Compliance rule set summary report
+CKALSTDT;zSecure Audit;      ;AU.R Standard object type compliance summary
+CKALSVC ;zSecure Audit;      ;AU.S MVS tables - Supervisor calls
+CKALSVSM;zSecure Audit;      ;AU.S MVS tables - Virtual storage map
+CKALSXIT;zSecure Audit;      ;AU.S MVS extended - Exits and tables
+CKALSY13;zSecure Audit;      ;AU.S MVS tables - System concerns (132 wide)
+CKALSY80;zSecure Audit;      ;AU.S MVS tables - System concerns ( 80 wide)
+CKALUTRU;zSecure Audit;RACF  ;AU.S RACF user - Trusted users (detailed)
+CKALUTR0;zSecure Audit;RACF  ;AU.S RACF user - Trusted users (concise)
+CKALVOLD;zSecure Audit;      ;AU.S MVS extended - DASD volume protection
+CKAO*   ;zSecure Audit;      ;zSecure Audit (RACF or common) log field mappings
+CKAO‡   ;zSecure Audit;      ;zSecure Audit standard license members
+CKAO‡TMP;zSecure Audit;RACF  ;Temporary Implementations
+CKAO‡20C;zSecure Audit;      ;zSecure Audit STANDARD and Imbed statements
+CKAO111 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.1 RACF PASSWD interval=90
+CKAO112 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.2 RACF PASSWD history=8
+CKAO113 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.3 RACF PASSWD revoke=4
+CKAO114 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.4 RACF PASSWD no rules
+CKAO115 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.5 RACF PASSWD minchange=1
+CKAO116 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.6 RACF PASSWD inactive=180
+CKAO117 ;zSecure Audit;RACF  ;AU.R GSD F.1.1.7 RVARY PWSET changed=yes
+CKAO141 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.1 BATCHALLRACF active=yes
+CKAO1410;zSecure Audit;RACF  ;AU.R GSD F.1.4.10 RACF TAPEVOL active=yes
+CKAO1411;zSecure Audit;RACF  ;AU.R GSD F.1.4.11 UNIXPRIV active=yes
+CKAO1412;zSecure Audit;RACF  ;AU.R GSD F.1.4.12 OPERCMDS RACLIST=yes
+CKAO1413;zSecure Audit;RACF  ;AU.R GSD F.1.4.13 UNIXPRIV RACLIST=yes
+CKAO1414;zSecure Audit;RACF  ;AU.R GSD F.1.4.14 DATASET generic=yes
+CKAO1415;zSecure Audit;RACF  ;AU.R GSD F.1.4.15 PROTECTALL/WHENPROGRAM
+CKAO1416;zSecure Audit;RACF  ;AU.R GSD F.1.4.16 RVARY*****PWSET changed
+CKAO1417;zSecure Audit;RACF  ;AU.R GSD F.1.4.17 INITSTATS and Logopt
+CKAO1419;zSecure Audit;RACF  ;AU.R GSD F.1.4.19 SETROPTS CMDVIOL=yes
+CKAO142 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.2 RACF DATASET active=yes
+CKAO1420;zSecure Audit;RACF  ;AU.R GSD F.1.4.20 SETROPTS SAUDIT=yes
+CKAO1421;zSecure Audit;RACF  ;AU.R GSD F.1.4.21 SETROPTS OPERAUDIT=yes
+CKAO1422;zSecure Audit;RACF  ;AU.R GSD F.1.4.22 DATASET class audit=yes
+CKAO1423;zSecure Audit;RACF  ;AU.R GSD F.1.4.23 GROUP class audit=yes
+CKAO1424;zSecure Audit;RACF  ;AU.R GSD F.1.4.24 USER class audit=yes
+CKAO1425;zSecure Audit;RACF  ;AU.R GSD F.1.4.25 OPERCMDS cls audit=yes
+CKAO1426;zSecure Audit;RACF  ;AU.R GSD F.1.4.26 TSOAUTH cls audit=yes
+CKAO1427;zSecure Audit;RACF  ;AU.R GSD F.1.4.27 SDSF class audit=yes
+CKAO1428;zSecure Audit;RACF  ;AU.R GSD F.1.4.28 FACILITY cls audit=yes
+CKAO1429;zSecure Audit;RACF  ;AU.R GSD F.1.4.29 UNIXPRIV cls audit=yes
+CKAO143 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.3 RACF GROUP class active
+CKAO1431;zSecure Audit;RACF  ;AU.R GSD F.1.4.31 PROCESS,LOGOPT_PROCESS
+CKAO1439;zSecure Audit;RACF  ;AU.R GSD F.1.4.39 MCS CONSOLES LOGON
+CKAO144 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.4 RACF USER class active
+CKAO1441;zSecure Audit;RACF  ;AU.R GSD F.1.4.41 DFHSM_STTASK privileges
+CKAO145 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.5 RACF TEMPDSN cls active
+CKAO146 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.6 RACF OPERCMDS cls active
+CKAO147 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.7 RACF TSOAUTH cls active
+CKAO148 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.8 RACF SDSF class active
+CKAO149 ;zSecure Audit;RACF  ;AU.R GSD F.1.4.9 RACF FACILITY active
+CKAO1731;zSecure Audit;RACF  ;AU.R GSD F.1.7.31 OMVS user unique home
+CKAO1735;zSecure Audit;RACF  ;AU.R GSD F.1.7.35 OMVS UID(0) share home
+CKAO1832;zSecure Audit;RACF  ;AU.R GSD F.1.8.32 STGADMIN_ARC_ENDUSER
+CKAO1835;zSecure Audit;RACF  ;AU.R GSD F.1.8.35 STGADMIN.IGG.DELGDG.FOR
+CKAO1848;zSecure Audit;RACF  ;AU.R GSD F.1.8.48 TSOAUTH_* UAC/AUDIT
+CKAO1861;zSecure Audit;RACF  ;AU.R GSD F.1.8.61 MVS.SETPROG UAC/AUDIT
+CKAO1862;zSecure Audit;RACF  ;AU.R GSD F.1.8.62 MVS.SETPROG UAC/AUDIT
+CKAO1863;zSecure Audit;RACF  ;AU.R GSD F.1.8.63 MVS.UNKNOWN UAC/AUDIt
+CKAO1866;zSecure Audit;RACF  ;AU.R GSD F.1.8.66 MVS.VARY.TCPIP.OBEYFILE
+CKAO1867;zSecure Audit;RACF  ;AU.R GSD F.1.8.67 FACILITY BPX.DAEMON
+CKAO1868;zSecure Audit;RACF  ;AU.R GSD F.1.8.68 FAC BPX.DEFAULT.USER
+CKAO1869;zSecure Audit;RACF  ;AU.R GSD F.1.8.69 FAC BPX.FILEATTR.APF
+CKAO1870;zSecure Audit;RACF  ;AU.R GSD F.1.8.70 FAC BPX.FILEATTR.PROGCT
+CKAO1873;zSecure Audit;RACF  ;AU.R GSD F.1.8.73 FACILITY BPX.SMF
+CKAO1874;zSecure Audit;RACF  ;AU.R GSD F.1.8.74 FACILITY BPX.STOR.SWAP
+CKAO1875;zSecure Audit;RACF  ;AU.R GSD F.1.8.75 FACILITY BPX.SUPERUSER
+CKAO1876;zSecure Audit;RACF  ;AU.R GSD F.1.8.76 FACILITY BPX.WLMSERVER
+CKAO1895;zSecure Audit;RACF  ;AU.R GSD F.1.8.95 VTAM RRSF Profile
+CKAO1896;zSecure Audit;RACF  ;AU.R GSD F.1.8.96 RRSF VTAMAPPL protection
+CKAP*   ;zSecure Audit;RACF  ;zSecure Audit PCI-DSS controls
+CKAP‡DEF;zSecure Audit;RACF  ;Deftypes and simulate statements PCI-DSS
+CKAP‡32 ;zSecure Audit;RACF  ;STANDARD statement and rule IMBEDS PCI-DSS v3.2
+CKAPC‡  ;zSecure Audit;      ;STANDARD and Imbed statements PCI-DSS
+CKAPCA22;zSecure Audit;RACF  ;PCI-DSS 10.2.2 privileged command auditing
+CKAPCA25;zSecure Audit;RACF  ;PCI-DSS 10.2.5 Telnet session logging
+CKAPC121;zSecure Audit;RACF  ;PCI-DSS 1.2.1  Restrict network traffic
+CKAPC223;zSecure Audit;RACF  ;PCI-DSS 2.2.3  Secure daemons, services and ports
+CKAPC711;zSecure Audit;RACF  ;PCI-DSS 7.1.1  Secure discrete data set profiles
+CKAPC722;zSecure Audit;RACF  ;PCI-DSS 7.2.2  Secure P.A.N and S.A.D. data sets
+CKAPC723;zSecure Audit;RACF  ;PCI-DSS 7.2.3  Secure access control system
+CKAPC811;zSecure Audit;RACF  ;PCI-DSS 8.1.1  System access requires unique id
+CKAPC814;zSecure Audit;RACF  ;PCI-DSS 8.1.4  Inactive account settings
+CKAPC816;zSecure Audit;RACF  ;PCI-DSS 8.1.6  Failed login attempt settings
+CKAPC821;zSecure Audit;RACF  ;PCI-DSS 8.2.1  IP encryption and authentication
+CKAPC823;zSecure Audit;RACF  ;PCI-DSS 8.2.3  Minimal user password length
+CKAPC824;zSecure Audit;RACF  ;PCI-DSS 8.2.4  Minimal password change interval
+CKAPC825;zSecure Audit;RACF  ;PCI-DSS 8.2.5  Minimal password history
+CKAS*   ;zSecure Audit;      ;zSecure Audit (RACF or common) log field mappings
+CKASKERB;zSecure Audit;RACF  ;SMF - Kerberos definitions
+CKASSECP;zSecure Audit;RACF  ;SMF - SecurPass defitions
+CKASUSS ;zSecure Audit;RACF  ;SMF - z/OS UNIX system services (in RACF records)
+CKASWBAC;zSecure Audit;      ;WEBACCESS - HTTP access log
+CKASWBER;zSecure Audit;      ;WEBERROR - HTTP error log
+CKAS0033;zSecure Audit;      ;SMF - type 33 (APPC transaction record)
+CKAS0080;zSecure Audit;RACF  ;SMF - type 80, 83 (RACF processing)
+CKAS0081;zSecure Audit;RACF  ;SMF - type 81 (RACF initialization)
+CKAS0089;zSecure Audit;      ;SMF - type 89 (Usage data)
+CKAS0090;zSecure Audit;      ;SMF - type 90 (System status)
+CKAS0092;zSecure Audit;      ;SMF - type 92 (z/OS UNIX system services)
+CKAS0102;zSecure Audit;      ;SMF - type 102 (DB2 audit record)
+CKAS0119;zSecure Audit;      ;SMF - type 119 (Connectivity statistics)
+CKAV*   ;zSecure Audit;      ;zSecure Audit command generation scripts
+CKAVRWWD;zSecure Audit;      ;Make UNIX directories _not_ world-writable
+CKAX*   ;zSecure Audit;      ;zSecure Audit general interface inclusions
+CKAXFCTS;zSecure Audit;      ;SYSIN for SCKRPROC CKACRCT1 (Change Track)
+CKF£*   ;zSecure Collect     ;zSecure Collect messages
+CKF£MSGS;zSecure Collect     ;Documentation of CKF messages
+CKG£*   ;CKGRACF      ;      ;CKGRACF messages, includes, and CARLa scripts
+CKG£MSGS;zSecure Admin;      ;Documentation of CKG messages
+CKGDEBUG;zSecure Visual      ;Sample CKGRACF DEBUG parameters
+CKGXLIST;zSecure Admin;      ;Generate CKGRACF LIST cmds for REFRESH profiles
+CKGXRDS ;zSecure Admin;      ;Recreate CKGRACF data and user data for DATASET
+CKGXREFR;zSecure Admin;      ;Generate CKGRACF REFRESH cmds where appropriate
+CKGXRGR ;zSecure Admin;      ;Recreate CKGRACF data and user data for GROUP
+CKGXRRES;zSecure Admin;      ;Recreate CKGRACF data and user data for GENERAL
+CKGXRUS ;zSecure Admin;      ;Recreate CKGRACF, TSO and user data for USER
+CKGXUSRW;zSecure Admin;      ;Generate CKGRACF WIPE cmds for CKGRACF, user data
+CKN£*   ;CKNSERVE     ;      ;CKNSERVE messages and include files
+CKN£MSGS;CKNSERVE     ;      ;Documentation of CKN messages
+CKNCKFAI;zSecure Collect     ;Sample CKFCOLL parameters for use with CKNSERVE
+CKQ*    ;zSecure SIEM ;      ;zSecure QRadar Integration
+CKQCES  ;zSecure SIEM ;      ;Custom events - model for CKQCES in CKQLEEF
+CKQLEEF ;zSecure SIEM ;      ;CARLa select events to Log Event Enhancent Format
+CKQLEEFL;zSecure SIEM ;      ;Select and format events to LEEF - real time feed
+CKQRENV ;zSecure SIEM RACF   ;Environmental configuration - model for LEEF
+CKQSPEC ;zSecure SIEM ;      ;Input/output configuration - model for LEEF
+CKQSPECL;zSecure SIEM ;      ;Input/output configuration for real time feed
+CKQXES  ;zSecure SIEM ;      ;Exclude events - model for CKQXES in CKQLEEF
+CKQ0ES  ;zSecure SIEM ;      ;Suppress/debug - model for CKQ0ES in CKQLEEF
+CKR£*   ;zSecure      ;      ;zSecure messages & release notes
+CKR£MSGS;zSecure      ;      ;Documentation of CKR messages
+CKR£ZS  ;zSecure for RACF    ;Release notes for zSecure for RACF
+CKR£ZZ  ;zSecure      ;      ;Release notes for zSecure
+CKRD*   ;zSecure      ;      ;zSecure displays (Admin, or common)
+CKRDAC1 ;zSecure for RACF    ;AU.S RACF resource - Authorized programs
+CKRDAUTH;zSecure for RACF    ;AU.S RACF user - Systemwide attributes and uid(0)
+CKRDCLAS;zSecure for RACF    ;AU.S RACF control - Class Descriptior Table
+CKRDDCLS;zSecure for RACF    ;AU.S RACF control - Class info from ICB (VM)
+CKRDEBUG;zSecure      ;      ;Sample CKRCARLA DEBUG parameters
+CKRDENT£;zSecure for RACF    ;AU.S RACF resource - Entity / segment summaries
+CKRDGAU ;zSecure for RACF    ;AU.S RACF user - Group-level authorizations
+CKRDGLOB;zSecure for RACF    ;AU.S RACF control - Global profiles
+CKRDLGAD;zSecure for RACF    ;AU.S RACF user - Users by logon age (details)
+CKRDLGAG;zSecure for RACF    ;AU.S RACF user - Users by logon age (summary)
+CKRDLGER;zSecure for RACF    ;AU.S RACF user - Logon failures (detailed)
+CKRDLGE0;zSecure for RACF    ;AU.S RACF user - Logon failures (concise)
+CKRDLGNU;zSecure for RACF    ;AU.S RACF user - Users that never logged on
+CKRDLGRV;zSecure for RACF    ;AU.S RACF user - Users with pending revoke
+CKRDNONR;zSecure for RACF    ;REPORT NONREDUNDANT display (not used by RA.3.3)
+CKRDOMVS;zSecure for RACF    ;AU.S RACF user - Shared z/OS UNIX Uids and Gids
+CKRDPADS;zSecure for RACF    ;AU.S RACF resource - Program Access to Data Sets
+CKRDPROF;zSecure for RACF    ;REPORT PROFILES display (not used by RA.3.1)
+CKRDPWAD;zSecure for RACF    ;AU.S RACF user - Users by password age (details)
+CKRDPWAG;zSecure for RACF    ;AU.S RACF user - Users by password age (summary)
+CKRDPWIN;zSecure for RACF    ;AU.S RACF user - Exceptional password intervals
+CKRDPWNU;zSecure for RACF    ;AU.S RACF user - Users with initial password
+CKRDPWXP;zSecure for RACF    ;AU.S RACF user - Users with expired password
+CKRDQEF ;zSecure      ;      ;IN.F TYPE=RUN_DD - Show allocated files
+CKRDQPK ;zSecure      ;      ;RE.K.P - Display public key labels
+CKRDQSK ;zSecure      ;      ;RE.K.S - Display symmetric key labels
+CKRDRGBW;zSecure for RACF    ;AU.S RACF resource - Global write access
+CKRDRROV;zSecure for RACF    ;Summary table of general resource profiles
+CKRDSAUT;zSecure for RACF    ;AU.S RACF control - Authorized caller table
+CKRDSCKN;zSecure      ;      ;CKNSERVE primary command
+CKRDSDSN;zSecure for RACF    ;AU.S RACF control - RACF database data sets
+CKRDSD80;zSecure      ;      ;AU.S MVS tables - VM System settings display
+CKRDSENP;zSecure for RACF    ;AU.S RACF resource - Profiles for sensitive data
+CKRDSPT ;zSecure for RACF    ;AU.S RACF control - Started proc. table & STARTED
+CKRDSRFR;zSecure for RACF    ;AU.S RACF control - SAF router table w/ CDT xref
+CKRDSRNG;zSecure for RACF    ;AU.S RACF control - RACF range table
+CKRDSRRS;zSecure for RACF    ;AU.S RACF control - RRSF nodes
+CKRDSR80;zSecure for RACF    ;AU.S RACF control - SETROPTS settings display
+CKRDSTC ;zSecure for RACF    ;AU.S RACF resource - Started task protection
+CKRDSY80;zSecure      ;      ;AU.S MVS tables - System settings display
+CKRDTEMP;zSecure for RACF    ;TEMPLATE display; also from AU.S RACF control
+CKRDTEM0;zSecure for RACF    ;AU.S RACF control - Template display (concise)
+CKRD2DIF;zSecure for RACF    ;Show added/deleted profiles between two databases
+CKRL    ;zSecure      ;      ;Empty member (to prevent JCL errors)
+CKRL$ALL;zSecure for RACF    ;Concatenation of many RACF reports
+CKRL*   ;zSecure      ;      ;zSecure (RACF or common) batch reports
+CKRLAC1 ;zSecure for RACF    ;AU.S RACF resource - Authorized programs
+CKRLAPPL;zSecure for RACF    ;Application access overview
+CKRLAUD ;zSecure for RACF    ;List nondefault auditing parameters
+CKRLAUTH;zSecure for RACF    ;AU.S RACF user - Systemwide attributes and uid(0)
+CKRLCICS;zSecure for RACF    ;Resolved access lists of CICS-related profiles
+CKRLCICT;zSecure for RACF    ;Resolved CICS transaction authorizations
+CKRLCLAS;zSecure for RACF    ;AU.S RACF control - Class Descriptior Table
+CKRLCLS£;zSecure for RACF    ;RACF UNLOAD class summary (included by C2RL$UNL)
+CKRLDB2 ;zSecure for RACF    ;DB2 sign-on class profile overview
+CKRLDCLS;zSecure for RACF    ;AU.S RACF control - Class info from ICB (VM)
+CKRLENT£;zSecure for RACF    ;AU.S RACF resource - Entity / segment summaries
+CKRLGAU ;zSecure for RACF    ;AU.S RACF user - Group-level authorizations
+CKRLGLOB;zSecure for RACF    ;AU.S RACF control - Global profiles
+CKRLGRPI;zSecure for RACF    ;Group tree with user information (two-pass query)
+CKRLGRPT;zSecure for RACF    ;Group tree overview (not used by RA.3.8)
+CKRLIMS ;zSecure for RACF    ;IMS protection class profile overview
+CKRLINAC;zSecure for RACF    ;Inactive users overview (cf. CKRLPWAD)
+CKRLJES2;zSecure for RACF    ;JES2 protection overview (not used by RA.3.F)
+CKRLLGAD;zSecure for RACF    ;AU.S RACF user - Users by logon age (details)
+CKRLLGAG;zSecure for RACF    ;AU.S RACF user - Users by logon age (summary)
+CKRLLGER;zSecure for RACF    ;AU.S RACF user - Logon failures (detailed)
+CKRLLGNU;zSecure for RACF    ;AU.S RACF user - Users that never logged on
+CKRLLGRV;zSecure for RACF    ;AU.S RACF user - Users with pending revoke
+CKRLMTX1;zSecure for RACF    ;Data set access for selected users (two-pass)
+CKRLMTX2;zSecure for RACF    ;Connection matrix for selected ids (two-pass)
+CKRLMTX3;zSecure for RACF    ;Access for selected data sets
+CKRLOMVS;zSecure for RACF    ;AU.S RACF user - Shared z/OS UNIX Uids and Gids
+CKRLPADS;zSecure for RACF    ;AU.S RACF resource - Program Access to Data Sets
+CKRLPROG;zSecure for RACF    ;Program profile and PADS overview
+CKRLPWAD;zSecure for RACF    ;AU.S RACF user - Users by password age (details)
+CKRLPWAG;zSecure for RACF    ;AU.S RACF user - Users by password age (summary)
+CKRLPWIN;zSecure for RACF    ;AU.S RACF user - Exceptional password intervals
+CKRLPWNU;zSecure for RACF    ;AU.S RACF user - Users with initial password
+CKRLPWXP;zSecure for RACF    ;AU.S RACF user - Users with expired password
+CKRLQEF ;zSecure      ;      ;TYPE=RUN_DD - List files allocated to the program
+CKRLQPK ;zSecure      ;      ;TYPE=ICSF_PUBKEY - Report on public key labels
+CKRLQSK ;zSecure      ;      ;TYPE=ICSF_SYMKEY - Report on symmetric key labels
+CKRLREV ;zSecure for RACF    ;Revoked users (and, for RACF version 1, connects)
+CKRLRGBW;zSecure for RACF    ;AU.S RACF resource - Global write access
+CKRLSAUT;zSecure for RACF    ;AU.S RACF control - Authorized caller table
+CKRLSCPS;zSecure for RACF    ;Scope reports for selected users (two-pass)
+CKRLSDSF;zSecure for RACF    ;SDSF protection overview (not used by RA.3.E)
+CKRLSDSN;zSecure for RACF    ;AU.S RACF control - RACF database data sets
+CKRLSD13;zSecure      ;      ;AU.S MVS tables - VM System settings (132 wide)
+CKRLSD80;zSecure      ;      ;AU.S MVS tables - VM System settings ( 80 wide)
+CKRLSENP;zSecure for RACF    ;AU.S RACF resource - Profiles for sensitive data
+CKRLSPT ;zSecure for RACF    ;AU.S RACF control - Started proc. table & STARTED
+CKRLSRFR;zSecure for RACF    ;AU.S RACF control - SAF router table w/ CDT xref
+CKRLSRNG;zSecure for RACF    ;AU.S RACF control - RACF range table
+CKRLSRRS;zSecure for RACF    ;AU.S RACF control - RRSF nodes
+CKRLSR13;zSecure for RACF    ;AU.S RACF control - SETROPTS settings (132 wide)
+CKRLSR80;zSecure for RACF    ;AU.S RACF control - SETROPTS settings ( 80 wide)
+CKRLSTC ;zSecure for RACF    ;AU.S RACF resource - Started task protection
+CKRLSY13;zSecure      ;      ;AU.S MVS tables - System settings (132 wide)
+CKRLSY80;zSecure      ;      ;AU.S MVS tables - System settings ( 80 wide)
+CKRLTAPE;zSecure for RACF    ;TAPEVOL and TAPEDSN profile overview
+CKRLTEMP;zSecure for RACF    ;AU.S RACF control - Template listing
+CKRLUNAM;zSecure for RACF    ;User names and installation data overview
+CKRLVHL ;zSecure for RACF    ;Verify users/groups have catchall(id.**) profile
+CKRLVSTD;zSecure for RACF    ;Verify data set OWNERs equal high-level quals
+CKRLVSTG;zSecure for RACF    ;Verify group OWNERs equal superior groups
+CKRLVSTU;zSecure for RACF    ;Verify user OWNERs equal default groups
+CKRR*   ;zSecure      ;      ;zSecure REPORT command default layouts
+CKRRAC1 ;zSecure      ;      ;REPORT AC1              (cf. CKRDAC1, CKRLAC1,
+CKRREDUN;zSecure for RACF    ;REPORT REDUNDANT        (not used by RA.3.3)
+CKRRNOND;zSecure for RACF    ;REPORT NONDEFAULT       (not used by RA.3.6)
+CKRRNONR;zSecure for RACF    ;REPORT NONREDUNDANT     (not used by RA.3.2)
+CKRROUTG;zSecure for RACF    ;REPORT OUTOFGROUP       (not used by RA.3.5)
+CKRRPADS;zSecure for RACF    ;REPORT PADS             (cf. CKRDPADS, CKRLPADS)
+CKRRPGM ;zSecure for RACF    ;REPORT PROGRAM PROTECTION
+CKRRPROF;zSecure for RACF    ;REPORT PROFILES         (not used by RA.3.1)
+CKRRSCOP;zSecure for RACF    ;REPORT SCOPE= PAGEBY=ID (not used by RA.3.4.2)
+CKRRSENS;zSecure for RACF    ;REPORT SENSITIVE        (cf. CKRDSENP, CKRLSENP)
+CKRRSTC ;zSecure      ;      ;REPORT STC              (cf. CKRDSTC, CKRLSTC,
+CKRV    ;zSecure      ;      ;Empty member (to prevent JCL errors)
+CKRV*   ;zSecure for RACF    ;Verification and command generation CARLa
+CKRVDSN ;zSecure for RACF    ;Verify data set protection (consistent, complete)
+CKRVPROG;zSecure for RACF    ;Verify program protection (consistent, ref. int.)
+CKRVPWHC;zSecure Admin;      ;Generate commands to convert hashed passwords
+CKRVRACF;zSecure for RACF    ;Verify RACF database consistency
+CKRVTCB ;zSecure for RACF    ;Verify Trusted Computing Base protection
+CKRVUNIX;zSecure for RACF    ;Generate commands to populate the UNIXMAP class
+CKRVWORM;zSecure for RACF    ;Verify absence of worm holes (call to CKRLRGBW)
+CKRX*   ;zSecure for RACF    ;Configurations and CARLa scripts for internal use
+CKRXCAC ;zSecure Admin;      ;Recreate access list entries
+CKRXCDS ;zSecure Admin;      ;Copy/Recreate data set profile
+CKRXCDSE;zSecure Admin;      ;Copy/Recreate data set profile segments
+CKRXCFRQ;zSecure for RACF    ;List connect counts to postprocess with SAS
+CKRXCFRS;SAS          ;      ;Postprocess connects with SAS (see CKRJSAS)
+CKRXCGR ;zSecure Admin;      ;Recreate group profile
+CKRXCGRE;zSecure Admin;      ;Recreate group profile segments
+CKRXCRE ;zSecure Admin;      ;Copy/Recreate general resource profile
+CKRXCREE;zSecure Admin;      ;Copy/Recreate general resource profile segments
+CKRXCRES;zSecure Admin;      ;Recreate general resource STARTED profiles only
+CKRXCUS ;zSecure Admin;      ;Recreate user profile
+CKRXCUSE;zSecure Admin;      ;Recreate user profile segments
+CKRXDEF1;zSecure      ;      ;Global configurations included automatically
+CKRXMCFS;zSecure for RACF    ;Backward compatibility member for MENU CFS=panel
+CKRXNLS*;zSecure      ;      ;Language override members
+CKRXRAC ;zSecure Admin;      ;Recreate access list entries
+CKRXRACR;zSecure Admin;      ;Recreate access list entries SETROPTS REFRESH
+CKRXRDS ;zSecure Admin;      ;Recreate dataset profile
+CKRXRDSE;zSecure Admin;      ;Recreate dataset profile segments
+CKRXRDSR;zSecure Admin;      ;Recreate dataset profile SETROPTS REFRESH
+CKRXRGR ;zSecure Admin;      ;Recreate group profile
+CKRXRGRE;zSecure Admin;      ;Recreate group profile segments
+CKRXRRE ;zSecure Admin;      ;Recreate general resource profile
+CKRXRREE;zSecure Admin;      ;Recreate general resource profile segments
+CKRXRRER;zSecure Admin;      ;Recreate general resource SETROPTS REFRESH
+CKRXRRES;zSecure Admin;      ;Recreate general resource STARTED profiles only
+CKRXRUS ;zSecure Admin;      ;Recreate user profile
+CKRXRUSE;zSecure Admin;      ;Recreate user profile segments
+CKRXWINP;zSecure Visual      ;Collect data for Windows client - alloc primary
+CKRXWIN1;zSecure Visual      ;Collect data for Windows client - data layout 1
+CKT£*   ;zSecure Audit;TSS   ;Release notes for zSecure Audit TSS
+CKT£AT  ;zSecure Audit;TSS   ;Release notes for zSecure Audit TSS
+CKTD*   ;zSecure Audit;TSS   ;zSecure Audit for TSS displays (CARLa)
+CKTDFDTS;zSecure Audit;TSS   ;SMF display - CA-TSS processing
+CKTDRSEN;zSecure Audit;TSS   ;AU.S MVS extended - Sensitive data set protection
+CKTDSTAP;zSecure Audit;TSS   ;AU.S MVS tables - Tape protection settings (TSS)
+CKTG*   ;zSecure Audit;TSS   ;zSecure Audit for TSS STIG Compliance
+CKTG‡TMP;zSecure Audit;TSS   ;Temporary Implementations
+CKTG‡6  ;zSecure Audit;TSS   ;STANDARD and IMBEDs TSS STIG 6.31
+CKTG‡6PL;zSecure Audit;TSS   ;STANDARD and IMBEDs TSS STIG PLUS 6.x
+CKTGIU20;zSecure Audit;TSS   ;AU.R STIG IUTN0020 Telnet Server start parms
+CKTL*   ;zSecure Audit;TSS   ;zSecure Audit for TSS batch reports (CARLa)
+CKTLFSTA;zSecure Audit;TSS   ;SMF report - TSS event counts by hour
+CKTLFSTB;zSecure Audit;TSS   ;SMF report - TSS event counts by time of day
+CKTLFSTC;zSecure Audit;TSS   ;SMF report - TSS event counts by weekday
+CKTLSTAP;zSecure Audit;TSS   ;AU.S MVS tables - Tape protection settings (TSS)
+CKV£*   ;zSecure Manager     ;Secure Manager for RACF z/VM
+CKV£MSGS;             ;      ;zSecure Manager for RACF z/VM messages
+CKV£ZS  ;             ;      ;Manager for RACF z/VM release information
+CKVD*   ;zSecure Manager     ;zSecure Manager for RACF - VM displays
+CKVD‡XO ;zSecure Manager     ;Audit concerns AU.S OVERVIEW - VM extended
+CKVDCLAS;zSecure Manager     ;AU.S RACF control - Class Descriptior Table (VM)
+CKVDSA80;zSecure Manager     ;AU.S RACF control - SETROPTS audit concerns (VM)
+CKVDSDEV;zSecure Manager     ;AU.S OVERVIEW - VM extended - VM real devices
+CKVDSMDK;zSecure Manager     ;AU.S OVERVIEW - VM extended - VM minidisks
+CKVDSR80;zSecure Manager     ;AU.S RACF control - SETROPTS display
+CKVDSY80;zSecure Manager     ;AU.S OVERVIEW - VM extended - System display
+CKVG*   ;zSecure Manager     ;zSecure Manager for RACF STIG controls
+CKVG‡   ;zSecure Manager     ;STANDARD and IMBEDs for z/VM STIG controls
+CKVG‡DEF;zSecure Manager     ;DEFTYPEs for site customization
+CKVG‡22 ;zSecure Manager     ;STANDARD member to imbed z/VM STIG controls
+CKVG431 ;zSecure Manager     ;z/VM STIG 4.3.1 System Options and active classes
+CKVL*   ;zSecure Manager     ;zSecure Manager for RACF - VM batch reports
+CKVL‡XO ;zSecure Manager     ;Audit concerns AU.S OVERVIEW - VM extended
+CKVLCLAS;zSecure Manager     ;AU.S RACF control - Class Descriptior Table (VM)
+CKVLSA13;zSecure Manager     ;AU.S RACF control - SETROPTS audit concerns (VM)
+CKVLSDEV;zSecure Manager     ;AU.S OVERVIEW - VM extended - VM real devices
+CKVLSMDK;zSecure Manager     ;AU.S OVERVIEW - VM extended - VM minidisks
+CKVLSR13;zSecure Manager     ;AU.S RACF control - SETROPTS display
+CKVLSY13;zSecure Manager     ;AU.S OVERVIEW - VM extended - System display
+CKVP*   ;zSecure Manager     ;zSecure Manager for z/VM PCI-DSS
+CKVP‡DEF;zSecure Manager     ;DEFTYPEs and SIMULATE statements for PCI-DSS
+CKVPB‡  ;zSecure Manager     ;STANDARD member to imbed z/VM PCI-DSS controls
+CKX£*   ;CKX          ;      ;Messages for the CKX component of zSecure
+CKX£MSGS;zSecure      ;      ;Documentation of CKX messages
+C2A£*   ;zSecure Audit;ACF2  ;Release notes for zSecure Audit for ACF2
+C2A£AA  ;zSecure Audit;ACF2  ;Release notes for zSecure Audit for ACF2
+C2AD*   ;zSecure Audit;ACF2  ;zSecure Audit for ACF2 displays (CARLa)
+C2AD‡CO ;zSecure Audit;ACF2  ;Audit concerns AU.S OVERVIEW - ACF2 control
+C2AD‡RO ;zSecure Audit;ACF2  ;Audit concerns AU.S OVERVIEW - ACF2 resource
+C2AD‡UO ;zSecure Audit;ACF2  ;Audit concerns AU.S OVERVIEW - ACF2 user
+C2ADCFDE;zSecure Audit;ACF2  ;AU.S ACF2 control - Field Def. Entries (detailed)
+C2ADCFD0;zSecure Audit;ACF2  ;AU.S ACF2 control - Field Def. Entries (concise)
+C2ADFDAC;zSecure Audit;ACF2  ;SMF display - ACF2 processing (layouts per event)
+C2ADFDAS;zSecure Audit;ACF2  ;SMF display - ACF2 processing (generic layout)
+C2ADFEXC;zSecure Audit;ACF2  ;SMF display - ACF2 daily exceptions
+C2ADLSGP;zSecure Audit;ACF2  ;DB2 secondary auditds ACF2 LIDs/SYSID overview
+C2ADPGM ;zSecure Audit;ACF2  ;Resource Program overview
+C2ADRAC1;zSecure Audit;ACF2  ;AU.S ACF2 resource - Authorized programs
+C2ADRFIL;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive HFS files
+C2ADRFW ;zSecure Audit;ACF2  ;AU.S ACF2 resource - World-writable UNIX files
+C2ADRRTR;zSecure Audit;ACF2  ;AU.S ACF2 resource - Rules with sensitive data
+C2ADRSEN;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive data sets with ACL
+C2ADRSTC;zSecure Audit;ACF2  ;AU.S ACF2 resource - Started task protection
+C2ADRTRU;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive resources w/ trust
+C2ADSCLM;zSecure Audit;ACF2  ;AU.S ACF2 control - Class mapping display
+C2ADSG80;zSecure Audit;ACF2  ;AU.S ACF2 control - GSO settings display
+C2ADSTAP;zSecure Audit;ACF2  ;AU.S MVS tables - Tape protection settings (ACF2)
+C2ADUAUD;zSecure Audit;ACF2  ;AU.S ACF2 user - Logonid audit concerns
+C2ADULAD;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (details)
+C2ADULAG;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (summary)
+C2ADULER;zSecure Audit;ACF2  ;AU.S ACF2 user - Logon failures (detailed)
+C2ADULE0;zSecure Audit;ACF2  ;AU.S ACF2 user - Logon failures (concise)
+C2ADULNU;zSecure Audit;ACF2  ;AU.S ACF2 user - Users that never logged on
+C2ADUPAD;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (details)
+C2ADUPAG;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (summary)
+C2ADUPFX;zSecure Audit;ACF2  ;AU.S ACF2 user - Shared prefixes (detailed)
+C2ADUPF0;zSecure Audit;ACF2  ;AU.S ACF2 user - Shared prefixes (concise)
+C2ADUPIN;zSecure Audit;ACF2  ;AU.S ACF2 user - Exceptional password intervals
+C2ADUPMN;zSecure Audit;ACF2  ;AU.S ACF2 user - Users without MinDays limit
+C2ADUPXP;zSecure Audit;ACF2  ;AU.S ACF2 user - Users with expired password
+C2ADUSPR;zSecure Audit;ACF2  ;AU.S ACF2 user - Users with scoped privileges
+C2ADUTRU;zSecure Audit;ACF2  ;AU.S ACF2 user - Trusted users
+C2ADUUPR;zSecure Audit;ACF2  ;AU.S ACF2 user - Users with unscoped privileges
+C2AG*   ;zSecure Audit;ACF2  ;zSecure Audit ACF2 STIG controls
+C2AG‡TMP;zSecure Audit;ACF2  ;Temporary Implementations
+C2AG‡6  ;zSecure Audit;ACF2  ;STANDARD and IMBEDs ACF2 STIG 6.31
+C2AG‡6PL;zSecure Audit;ACF2  ;STANDARD and IMBEDs ACF2 STIG PLUS 6.x
+C2AGA250;zSecure Audit;ACF2  ;AU.R STIG ACF0250 GSO APPLDEF record doc
+C2AGA260;zSecure Audit;ACF2  ;AU.R STIG ACF0260 AUTHEXIT GSO record
+C2AGA270;zSecure Audit;ACF2  ;AU.R STIG ACF0270 AUTOERAS ACF2 (NON)VSAM
+C2AGA280;zSecure Audit;ACF2  ;AU.R STIG ACF0280 ACF2 SYSTEM BACKUP
+C2AGA290;zSecure Audit;ACF2  ;AU.R STIG ACF0290 GSO BLPPGM record values
+C2AGA300;zSecure Audit;ACF2  ;AU.R STIG ACF0300 CLASMAP GSO SAF-ACF2
+C2AGA310;zSecure Audit;ACF2  ;AU.R STIG ACF0310 GSO EXITS record values
+C2AGA330;zSecure Audit;ACF2  ;AU.R STIG ACF0330 GSO LINKLST trusted lib
+C2AGA350;zSecure Audit;ACF2  ;AU.R STIG ACF0350 MAINT GSO record value
+C2AGA360;zSecure Audit;ACF2  ;AU.R STIG ACF0360 NJE GSO record values
+C2AGA370;zSecure Audit;ACF2  ;AU.R STIG ACF0370 GSO OPTS MODE=ABORT
+C2AGA375;zSecure Audit;ACF2  ;AU.R STIG ACF0375 GSO OPTS record values
+C2AGA380;zSecure Audit;ACF2  ;AU.R STIG ACF0380 GSO Protected Programs (PPGM)
+C2AGA390;zSecure Audit;ACF2  ;AU.R STIG ACF0390 PSWD GSO record values
+C2AGA395;zSecure Audit;ACF2  ;AU.R STIG ACF0395 Password/phrase cryptography
+C2AGA400;zSecure Audit;ACF2  ;AU.R STIG ACF0400 PWPHRASE GSO record values
+C2AGA410;zSecure Audit;ACF2  ;AU.R STIG ACF0410 RESRULE GSO record values
+C2AGA420;zSecure Audit;ACF2  ;AU.R STIG ACF0420 RESVOLS GSO record values
+C2AGA430;zSecure Audit;ACF2  ;AU.R STIG ACF0430 RULEOPTS GSO record values
+C2AGA440;zSecure Audit;ACF2  ;AU.R STIG ACF0440 SAFDEF GSO record values
+C2AGA480;zSecure Audit;ACF2  ;AU.R STIG ACF0480 SECVOLS GSO record values
+C2AGA490;zSecure Audit;ACF2  ;AU.R STIG ACF0490 SYNCOPTS GSO record values
+C2AGA500;zSecure Audit;ACF2  ;AU.R STIG ACF0500 TSO GSO record values
+C2AGA510;zSecure Audit;ACF2  ;AU.R STIG ACF0510 TSOCRT GSO record values
+C2AGA520;zSecure Audit;ACF2  ;AU.R STIG ACF0520 TSOKEYS GSO record values
+C2AGA530;zSecure Audit;ACF2  ;AU.R STIG ACF0530 TSOTWX GSO record values
+C2AGA540;zSecure Audit;ACF2  ;AU.R STIG ACF0540 TSO2741 GSO record values
+C2AGA560;zSecure Audit;ACF2  ;AU.R STIG ACF0560 Logonid Name and UID defined
+C2AGA570;zSecure Audit;ACF2  ;AU.R STIG ACF0570 Interactive logonids
+C2AGA600;zSecure Audit;ACF2  ;AU.R STIG ACF0600 STC attr started tasks
+C2AGA670;zSecure Audit;ACF2  ;AU.R STIG ACF0670 GSO MAINT records
+C2AGA680;zSecure Audit;ACF2  ;AU.R STIG ACF0680 GSO MAINT logonid attributes
+C2AGA690;zSecure Audit;ACF2  ;AU.R STIG ACF0690 Emergency logonid settings
+C2AGA710;zSecure Audit;ACF2  ;AU.R STIG ACF0710 REFRESH attribute restrictions
+C2AGA720;zSecure Audit;ACF2  ;AU.R STIG ACF0720 RACF operations attribute
+C2AGA750;zSecure Audit;ACF2  ;AU.R STIG ACF0750 ACCOUNT,LEADER,SECURITY SPCLIST
+C2AGA760;zSecure Audit;ACF2  ;AU.R STIG ACF0760 logonid security attribute
+C2AGA780;zSecure Audit;ACF2  ;AU.R STIG ACF0780 logonid AUDIT/CONSULT attribute
+C2AGA800;zSecure Audit;ACF2  ;AU.R STIG ACF0800 logonid TAPE-BLP/TAPE-LBL
+C2AGA820;zSecure Audit;ACF2  ;AU.R STIG ACF0820 CONSOLE privilege restrictions
+C2AGA830;zSecure Audit;ACF2  ;AU.R STIG ACF0830 ALLCMDS privilege restrictions
+C2AGA840;zSecure Audit;ACF2  ;AU.R STIG ACF0840 PPGM privilege restrictions
+C2AGA850;zSecure Audit;ACF2  ;AU.R STIG ACF0850 OPERATOR privilege restrictions
+C2AGC010;zSecure Audit;ACF2  ;AU.R STIG ACP0010 Restrict access to SYS1.PARMLIB
+C2AGC020;zSecure Audit;ACF2  ;AU.R STIG ACP0020 Restrict access to SYS1.LINKLIB
+C2AGC030;zSecure Audit;ACF2  ;AU.R STIG ACP0030 Restrict access to SYS1.SVCLIB
+C2AGC040;zSecure Audit;ACF2  ;AU.R STIG ACP0040 Control access to SYS1.IMAGELIB
+C2AGC050;zSecure Audit;ACF2  ;AU.R STIG ACP0050 Restrict access to SYS1.LPALIB
+C2AGC060;zSecure Audit;ACF2  ;AU.R STIG ACP0060 Control access to APF libraries
+C2AGC070;zSecure Audit;ACF2  ;AU.R STIG ACP0070 Control access to LPA libraries
+C2AGC080;zSecure Audit;ACF2  ;AU.R STIG ACP0080 Restrict access to SYS1.NUCLEUS
+C2AGC110;zSecure Audit;ACF2  ;AU.R STIG ACP0110 Restrict access to the linklist
+C2AGC120;zSecure Audit;ACF2  ;AU.R STIG ACP0120 Control access to ACP databases
+C2AGC130;zSecure Audit;ACF2  ;AU.R STIG ACP0130 Access to the master catalog
+C2AGC135;zSecure Audit;ACF2  ;AU.R STIG ACP0135 Control access to user catalogs
+C2AGC150;zSecure Audit;ACF2  ;AU.R STIG ACP0150 Control access to JES data sets
+C2AGC170;zSecure Audit;ACF2  ;AU.R STIG ACP0170 Restrict access to SYS1.UADS
+C2AGC180;zSecure Audit;ACF2  ;AU.R STIG ACP0180 Control access to SMF libraries
+C2AGC230;zSecure Audit;ACF2  ;AU.R STIG ACP0230 Control access to page datasets
+C2AGC250;zSecure Audit;ACF2  ;AU.R STIG ACP0250 Access to STC / TSO procedures
+C2AGF020;zSecure Audit;ACF2  ;AU.R STIG IFTP0020 FTP startup parameters
+C2AGF030;zSecure Audit;ACF2  ;AU.R STIG IFTP0030 FTP.DATA configuration
+C2AGIU20;zSecure Audit;ACF2  ;AU.R STIG IUTN0020 Telnet Server startup params
+C2AGSM08;zSecure Audit;ACF2  ;AU.R STIG ZSMSA008 DFSMS GSO CLASMAP reqs
+C2AGSM32;zSecure Audit;ACF2  ;AU.R STIG ZSMS0032 SENSDSN SMS settings
+C2AGTC20;zSecure Audit;ACF2  ;AU.R STIG ITCP0020 TCPIP.DATA settings
+C2AGZU41;zSecure Audit;ACF2  ;AU.R STIG ZUSS0041 OMVSGRP STCOMVSGID
+C2AGZU42;zSecure Audit;ACF2  ;AU.R STIG ZUSS0042 UNIX groups unique GID
+C2AGZU60;zSecure Audit;ACF2  ;AU.R STIG ZUSSA060 UNIX resource CLASMAP
+C2AGZU70;zSecure Audit;ACF2  ;AU.R STIG ZUSSA070 UNIX resource INFODIR
+C2AI*   ;zSecure Audit;ACF2  ;zSecure Audit for ACF2 include members
+C2AIAYLA;zSecure Audit;ACF2  ;RULE imbed ACF2_SENSDSN_ACCESS: log ALLOC
+C2AIAYLR;zSecure Audit;ACF2  ;RULE imbed ACF2_SENSDSN_ACCESS: log READ
+C2AIAYLW;zSecure Audit;ACF2  ;RULE imbed ACF2_SENSDSN_ACCESS: log WRITE
+C2AIAYP1;zSecure Audit;ACF2  ;ACF2_SENSDSN_ACCESS: systems progr./trusted STCs
+C2AIDEC ;zSecure Audit;ACF2  ;Decompile script for SCKRSAMP C2AZJIVP
+C2AISUPC;zSecure Audit;ACF2  ;ISRSUPC parameters for SCKRSAMP C2AZJIVP
+C2AIVPNO;zSecure Audit;ACF2  ;"Verify failed" message for SCKRSAMP C2AZJIVP
+C2AIVPOK;zSecure Audit;ACF2  ;"Verify succeeded" message for SCKRSAMP C2AZJIVP
+C2AL$ALL;zSecure Audit;ACF2  ;Concatenation of all AU.S MVS and ACF2 categories
+C2AL$CD ;zSecure Audit;ACF2  ;AU.S ACF2 control category
+C2AL$RD ;zSecure Audit;ACF2  ;AU.S ACF2 resource category
+C2AL$UD ;zSecure Audit;ACF2  ;AU.S ACF2 user category
+C2AL$XD ;zSecure Audit;ACF2  ;AU.S MVS extended category (cf. CKAL$XD)
+C2AL*   ;zSecure Audit;ACF2  ;zSecure Audit for ACF2 batch reports (CARLa)
+C2AL‡ALL;zSecure Audit;ACF2  ;Audit concerns for all AU.S MVS & ACF2 categories
+C2AL‡CO ;zSecure Audit;ACF2  ;Audit concerns for AU.S ACF2 control
+C2AL‡RO ;zSecure Audit;ACF2  ;Audit concerns for AU.S ACF2 resource
+C2AL‡UO ;zSecure Audit;ACF2  ;Audit concerns for AU.S ACF2 user
+C2ALCFDE;zSecure Audit;ACF2  ;AU.S ACF2 control - Field Definition Entries
+C2ALCLS£;zSecure Audit;ACF2  ;ACF2 UNLOAD summary (included by C2ALCUNL)
+C2ALCUNL;zSecure Audit;ACF2  ;UNLOAD ACF2 database (included by C2RL$UNL)
+C2ALDEC ;zSecure Audit;ACF2  ;List rules like ACF2 does (decompile)
+C2ALFEVA;zSecure Audit;ACF2  ;SMF report - ACF2 event counts by hour
+C2ALFEVB;zSecure Audit;ACF2  ;SMF report - ACF2 event counts by time of day
+C2ALFEVC;zSecure Audit;ACF2  ;SMF report - ACF2 event counts by weekday
+C2ALFEXC;zSecure Audit;ACF2  ;SMF report - ACF2 daily exceptions
+C2ALPGM ;zSecure Audit;ACF2  ;APF Module Protection list
+C2ALRAC1;zSecure Audit;ACF2  ;AU.S ACF2 resource - Authorized programs
+C2ALRFIL;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive HFS files
+C2ALRFW ;zSecure Audit;ACF2  ;AU.S ACF2 resource - World-writable UNIX files
+C2ALRRTR;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive rules (detailed)
+C2ALRRT0;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive rules (concise)
+C2ALRSEN;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive data (detailed)
+C2ALRSE0;zSecure Audit;ACF2  ;AU.S ACF2 resource - Sensitive data (concise)
+C2ALRSTC;zSecure Audit;ACF2  ;AU.S ACF2 resource - Started task protection
+C2ALRTRU;zSecure Audit;ACF2  ;AU.S ACF2 resource - Data w/ trustees (detailed)
+C2ALRTR0;zSecure Audit;ACF2  ;AU.S ACF2 resource - Data w/ trustees (concise)
+C2ALSCLM;zSecure Audit;ACF2  ;AU.S ACF2 control - Class mapping report
+C2ALSG13;zSecure Audit;ACF2  ;AU.S ACF2 control - GSO settings (132 wide)
+C2ALSG80;zSecure Audit;ACF2  ;AU.S ACF2 control - GSO settings ( 80 wide)
+C2ALSTAP;zSecure Audit;ACF2  ;AU.S MVS tables - Tape protection settings (ACF2)
+C2ALUAUD;zSecure Audit;ACF2  ;AU.S ACF2 user - Logonid audit concerns
+C2ALULAD;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (details)
+C2ALULAG;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (summary)
+C2ALULER;zSecure Audit;ACF2  ;AU.S ACF2 user - Logon failures
+C2ALULNU;zSecure Audit;ACF2  ;AU.S ACF2 user - Users that never logged on
+C2ALUPAD;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (details)
+C2ALUPAG;zSecure Audit;ACF2  ;AU.S ACF2 user - Users by password age (summary)
+C2ALUPFX;zSecure Audit;ACF2  ;AU.S ACF2 user - Shared prefixes
+C2ALUPIN;zSecure Audit;ACF2  ;AU.S ACF2 user - Exceptional password intervals
+C2ALUPMN;zSecure Audit;ACF2  ;AU.S ACF2 user - Users without MinDays limit
+C2ALUPXP;zSecure Audit;ACF2  ;AU.S ACF2 user - Users with expired password
+C2ALUSPR;zSecure Audit;ACF2  ;AU.S ACF2 user - Users with scoped privileges
+C2ALUTRU;zSecure Audit;ACF2  ;AU.S ACF2 user - Trusted users (detailed)
+C2ALUTR0;zSecure Audit;ACF2  ;AU.S ACF2 user - Trusted users (concise)
+C2ALUUPR;zSecure Audit;ACF2  ;AU.S ACF2 user - Users with unscoped privileges
+C2AP*   ;zSecure Audit;ACF2  ;zSecure Audit ACF2 PCI-DSS Compliance
+C2AP‡32 ;zSecure Audit;ACF2  ;STANDARD statement and rule IMBEDS PCI-DSS v3.2
+C2APCA22;zSecure Audit;ACF2  ;PCI-DSS 10.2.2 privileged command auditing
+C2APC811;zSecure Audit;ACF2  ;PCI-DSS 8.1.1  System access requires unique id
+C2APC816;zSecure Audit;ACF2  ;PCI-DSS 8.1.6  Failed login attempt settings
+C2APC818;zSecure Audit;ACF2  ;PCI-DSS 8.1.8  Idle session related settings
+C2APC82 ;zSecure Audit;ACF2  ;PCI-DSS 8.2    Addition authentication settings
+C2APC821;zSecure Audit;ACF2  ;PCI-DSS 8.2.1  IP encryption and authentication
+C2APC823;zSecure Audit;ACF2  ;PCI-DSS 8.2.3  Minimal user password length
+C2APC824;zSecure Audit;ACF2  ;PCI-DSS 8.2.4  Minimal password change interval
+C2APC825;zSecure Audit;ACF2  ;PCI-DSS 8.2.5  Minimal password history
+C2APC826;zSecure Audit;ACF2  ;PCI-DSS 8.2.6  Password change policies
+C2APC85 ;zSecure Audit;ACF2  ;PCI-DSS 8.5    Generic logonids and accounts
+C2E*    ;zSecure Audit;      ;zSecure Audit QRadar interface
+C2ELEEF ;zSecure Audit;      ;Create LEEF for QRadar SIEM
+C2ELENV ;zSecure Audit;      ;Define environment data created by C2EQENV
+C2EQAENV;zSecure Audit;      ;ACF2 environment data generator for QRadar
+C2EQCES ;zSecure Audit;      ;Model for exit point C2EQCES in member C2ELEEF
+C2EQENV ;zSecure Audit;      ;Environment data generator for QRadar
+C2EQRENV;zSecure Audit;      ;RACF environment data generator for QRadar
+C2EQSPEC;zSecure Audit;      ;Input/output file specifications for QRadar
+C2EQTENV;zSecure Audit;      ;TSS environment data generator for QRadar
+C2EQXES ;zSecure Audit;      ;Model for exit point C2EQXES in member C2ELEEF
+C2EQ0ES ;zSecure Audit;      ;Model for exit point C2EQ0ES in member C2ELEEF
+C2P*    ;zSecure Admin/Alert ;zSecure Access Monitor or zSecure Alert
+C2P£MSGS;zSecure Alert;      ;Documentation of C2P messages
+C2PAMANC;zSecure Admin;      ;Sample Access Monitor analytics configuration
+C2PAMANZ;zSecure Admin;      ;Access Monitor analytics data collection
+C2PAMCMP;zSecure Admin;      ;Sample CARLa conversion/compression commands
+C2PAMCOL;zSecure Admin;      ;Daily collection of Access Monitor records
+C2PAMCON;zSecure Admin;      ;Daily consolidation of Access Monitor records
+C2PAMCVT;zSecure Admin;      ;Sample Access Monitor record conversion
+C2PAMMAP;zSecure Admin;      ;Sample TYPE=ACCESS mapping for data reduction
+C2PAMSTS;zSecure Admin;      ;Access Monitor statistics
+C2PMIB  ;zSecure Alert;      ;Management Information Base (SNMP trap mapping)
+C2PXCOLL;zSecure Alert;      ;SYSIN for procedure C2PCOLL
+C2R£*   ;zSecure      ;      ;zSecure messages
+C2R£MSGS;zSecure (C2RIMENU)  ;Documentation of C2R messages (NLS component)
+C2RD*   ;zSecure      ;      ;zSecure displays (Admin, or common)
+C2RDFLD ;zSecure      ;      ;FIELD primary command
+C2RDRAS ;zSecure for RACF    ;RA.S - CDT and SETROPTS class info
+C2RDRASD;zSecure for RACF    ;RA.S - CDT and SETROPTS class info from database
+C2RL$UNL;zSecure      ;      ;Unload database(s) and report statistics
+C2RL*   ;zSecure      ;      ;zSecure (RACF or common) batch reports
+C2RLFUNL;zSecure Audit;      ;Included by SCKRSAMP C2RJFUNL (Unload SMF)
+C2RS*   ;zSecure Visual      ;zSecure Visual CARLa
+C2RSEGMT;zSecure Visual      ;CARLa to provide client with segment list
+C2RW*   ;zSecure Visual      ;zSecure Visual include members
+C2RWABOU;zSecure Visual      ;About box include CARLa
+C2RWEXG1;zSecure Visual      ;CKGRACF command include member
+C2RWEXR1;zSecure Visual      ;CARLa command include member
+C2RX*   ;zSecure      ;      ;JCL and UI inclusion members
+C2RXCSRT;zSecure Audit;      ;SYSIN for SCKRSAMP CKACTPRT (Change track)
+C2RXDEFU;zSecure      ;      ;CARLa member to allow for user defines
+C2RXDEF1;zSecure for RACF    ;Global configurations included automatically
+C2RXLOG ;zSecure Visual      ;Input for SCKRSAMP C2RSLOG to copy serverlogs
+C2RXMHDG;zSecure      ;      ;Input for SCKRPROC CKACTM (Email support)
+C2RXMHD2;zSecure      ;      ;Input for SCKRPROC CKACTM (Email support)
+C2RXMHD3;zSecure      ;      ;Input for SCKRPROC CKACTM (Email support)
+C2RXSL01;zSecure      ;      ;XSLT stylesheet (convert XML output to HTML)
+C2RXSTEP;zSecure Visual      ;zSecure Visual configurations for .profile
+C2X*    ;Exit Activator      ;RACF Activator messages and inclusion members
+C2X£MSGS;Exit Activator      ;Documentation of C2X messages
+
