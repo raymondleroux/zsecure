@@ -1,0 +1,18 @@
+//LISTVSTU EXEC PGM=IEFBR14                             
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                   
+//  SPACE=(TRK,(2,2)),UNIT=3390,                        
+//  DCB=(LRECL=256,BLKSIZE=25600,RECFM=FB),             
+//  DISP=(MOD,DELETE,DELETE)                            
+//LISTVSTU EXEC C2RC,CONFIG=C2R$VOID                    
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                   
+//  SPACE=(TRK,(2,2)),UNIT=3390,                        
+//  DCB=(LRECL=256,BLKSIZE=25600,RECFM=FB),             
+//  DISP=(NEW,CATLG,DELETE)                             
+//SYSIN    DD   DISP=SHR,DSN=&CPREFIX..SCKRCARL(CKRL)   
+//*user operation                                       
+//          DD   *                                      
+  newlist type=RACF                                     
+  select class=user operations                          
+  sortlist key(8) ';' complex ';' pgmrname ';'      ,   
+    owner ';' operations ';' dfltgrp ';' ljdate ';' ,   
+    instdata                                            
