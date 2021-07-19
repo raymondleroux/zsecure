@@ -1,0 +1,14 @@
+//LISTVSTU EXEC C2RC,CONFIG=C2R$VOID                     
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                    
+//  UNIT=3390,                                           
+//  DCB=(LRECL=256,BLKSIZE=25600,RECFM=FB),              
+//  SPACE=(TRK,(2,2)),                                   
+//  DISP=(NEW,CATLG,DELETE)                              
+//SYSIN    DD   DISP=SHR,DSN=&CPREFIX..SCKRCARL(CKRL)    
+//*user special                                          
+//          DD   *                                       
+  newlist type=racf caps nopage retain                   
+  select segment=base class=user special                 
+  sortlist key ';' complex ';' owner ';'  ,              
+    dfltgrp ';' ljdate ';'               ,               
+    instdata                                             
