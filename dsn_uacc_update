@@ -1,0 +1,11 @@
+//STEP001  EXEC PGM=SORT                              
+//SORTIN   DD DSN=&SYSUID..CKR.CKALRPAU,DISP=SHR      
+//SORTOUT  DD DSN=&SYSUID..CKR.&RES,                  
+//  SPACE=(CYL,(2,2)),UNIT=3390,                      
+//  DCB=(&SYSUID..CKR.CKALRPAU),                      
+//  DISP=(NEW,CATLG)                                  
+//SYSOUT   DD SYSOUT=*                                
+//SYSIN    DD *                                       
+  INCLUDE COND=(6,8,CH,EQ,C'DATASET',AND,60,10,CH,EQ, 
+        C'Verify why UACC>=UPDATE')                   
+  SORT FIELDS=(1,8,CH,A),FORMAT=CH                    
