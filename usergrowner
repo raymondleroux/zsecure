@@ -1,0 +1,18 @@
+//LISTVSTU EXEC C2RC,CONFIG=C2R$VOID                              
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                             
+//  UNIT=3390,                                                    
+//  DCB=(LRECL=133,BLKSIZE=13300,RECFM=FB),                       
+//  SPACE=(TRK,(2,2)),                                            
+//  DISP=(NEW,CATLG,DELETE)                                       
+//CKRCMD   DD DSN=&SYSUID..CKR.CKRCMD.&RES.,                      
+//  UNIT=3390,                                                    
+//  DCB=(LRECL=133,BLKSIZE=13300,RECFM=FB),                       
+//  SPACE=(TRK,(2,2)),                                            
+//  DISP=(NEW,CATLG,DELETE)                                       
+//SYSIN    DD   DISP=SHR,DSN=&CPREFIX..SCKRCARL(CKRL)             
+//          DD   *                                                
+newlist type=RACF title="Default group and owner mismatch report",
+  subtitle="Default group and owner must match!"                  
+  select class=USER segment=BASE dfltgrp<<>>owner                 
+  exclude key=irrsitec                                            
+  sortlist "alu " key "owner(" dfltgrp ")"                        
