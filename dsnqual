@@ -1,0 +1,10 @@
+//LISTVSTU EXEC C2RC,CONFIG=C2R$VOID                   
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                  
+//  SPACE=(TRK,(2,2)),UNIT=3390,                       
+//  DCB=(LRECL=133,BLKSIZE=13300,RECFM=FB),            
+//  DISP=(NEW,CATLG,DELETE)                            
+//SYSIN    DD   DISP=SHR,DSN=&CPREFIX..SCKRCARL(CKRL)  
+//          DD   *                                     
+ N T='Datasets with Owner <> High Level Qualifier'     
+   S CLASS=DATASET SEG=BASE QUAL<<>>OWNER              
+   sortlist "ALTDSD "  QUAL  "OWNER(" QUAL ")"         
