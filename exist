@@ -1,0 +1,16 @@
+//LISTVSTU EXEC C2RC,CONFIG=C2R$VOID                        
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                       
+//  UNIT=3390,                                              
+//  DCB=(LRECL=133,BLKSIZE=13300,RECFM=FB),                 
+//  SPACE=(CYL,(2,2)),                                      
+//  DISP=(NEW,CATLG,DELETE)                                 
+//SMF001   DD DSN=LOPX.SMFDMP.HDATA.TEST,DISP=SHR           
+//SYSIN    DD   DISP=SHR,DSN=&CPREFIX..SCKRCARL(CKRL)       
+//*EXIST1                                                   
+//          DD   *                                          
+newlist type=smf                                            
+alloc type=smf DD=SMF001                                    
+ALLOC TYPE=CKFREEZE DSN=SYS1.CONSUL.DATA.TO25.CKFREEZE      
+ALLOC TYPE=RACF DSN=SYS1.RACF.PRIM  COMPLEX=MVS2            
+select exists(profile)                                      
+display class resource :owner :uacc :instdata               
