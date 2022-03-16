@@ -1,0 +1,15 @@
+//*List dataset warning
+//LISTVSTU EXEC C2RC,CONFIG=C2R$VOID                    
+//CKREPORT DD DSN=&SYSUID..CKR.&RES.,                   
+//  UNIT=3390,                                          
+//  DCB=(LRECL=2048,BLKSIZE=20480,RECFM=FB),            
+//  SPACE=(CYL,(800,800)),                              
+//  DISP=(NEW,CATLG,CATLG)                              
+//SYSIN    DD   DISP=SHR,DSN=&CPREFIX..SCKRCARL(CKRL)   
+//*list dataset by user access list                                        
+//          DD   *                                      
+  newlist type=racf caps nopage retain                  
+  select segment=base class=dataset warning mask=*.**           
+  sortlist key ';' complex ';' owner ';'  ,             
+    uacc ';' acl(resolve) acl:cgauthda    ,             
+    warning ';' instdata                                          
